@@ -5,6 +5,12 @@ import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.MappedSuperclass;
 
+/*
+Esta implementação serve para que não haja necessidade
+de repetir código quando as classes forem identicas porém com nomes diferentes.
+Basta apenas criar as classes e extender dessa classe abstrata.
+ */
+
 @MappedSuperclass
 public abstract class BaseItem {
 
